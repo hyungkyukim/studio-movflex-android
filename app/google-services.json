@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "316844823802",
+    "project_id": "movflex-4a5d9",
+    "storage_bucket": "movflex-4a5d9.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:316844823802:android:da13a32e1a81a01c576543",
+        "android_client_info": {
+          "package_name": "kr.movflex.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAeoDAmLRLOvsV_AYGTSyJs2XuMqgpX81U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
