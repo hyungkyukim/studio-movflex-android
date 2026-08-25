@@ -372,4 +372,12 @@ public class MainActivity extends AppCompatActivity {
             OneSignal.login(userId);
         }
     }
+
+    public void setDataTags(String key, String value) {
+        if (value != null) {
+            OneSignal.getUser().addTag(key, value);
+        } else {
+            OneSignal.getUser().removeTag(key);
+        }
+    }
 }

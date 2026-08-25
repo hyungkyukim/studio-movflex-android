@@ -125,4 +125,14 @@ public class S3AppNative {
             }
         });
     }
+
+    @JavascriptInterface
+    public void setDataTags(String key, String value) {
+        new Handler().post(new Runnable() {
+            @Override
+            public void run() {
+                activity.setDataTags(key, value);
+            }
+        });
+    }
 }
