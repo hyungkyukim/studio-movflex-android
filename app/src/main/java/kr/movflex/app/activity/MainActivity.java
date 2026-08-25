@@ -85,7 +85,7 @@ public class MainActivity extends AppCompatActivity {
         binding.setVariable(BR.vm, vm);
         binding.executePendingBindings();
 
-        WindowCompat.setDecorFitsSystemWindows(getWindow(), false);
+        WindowCompat.setDecorFitsSystemWindows(getWindow(), true);
 
         boolean permission = getIntent().getBooleanExtra("permission", false);
         if (permission) permissionCheck();
@@ -366,7 +366,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void setPushNotificationUser(String userId) {
-        if (userId.isEmpty()) {
+        if (userId == null) {
             OneSignal.logout();
         } else {
             OneSignal.login(userId);
